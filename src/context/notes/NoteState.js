@@ -21,8 +21,8 @@ const NoteState = (props) => {
       }
     });
     const json = await response.json();
-    console.log(json)
-    setNotes(json)
+    console.log(json);
+    setNotes(json);
 
 
   }
@@ -39,7 +39,7 @@ const NoteState = (props) => {
     });
 
     const note =await response.json();
-    setNotes(notes.concat(note))
+    setNotes(notes.concat(note));
 
   }
 

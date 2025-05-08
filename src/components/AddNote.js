@@ -11,12 +11,12 @@ const AddNote = (props) => {
 
     const handleClick = (e)=>{
         e.preventDefault();
-        addNote(note.title , note.description , note.tag)
-        setNote({title: "", description: "", tag: ""})
-        props.showAlert("Added Successfully" , "success")
+        addNote(note.title , note.description , note.tag);
+        setNote({title: "", description: "", tag: ""});
+        props.showAlert("Added Successfully" , "success");
     }
     const onChange = (e)=>{
-        setNote({...note , [e.target.name]: e.target.value})
+        setNote({...note , [e.target.name]: e.target.value});
     }
   return (
     <div className="container my-3">
